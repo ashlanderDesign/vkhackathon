@@ -99,6 +99,7 @@ const app = new Vue({
           if(localStorage.getItem('age') == null || localStorage.getItem('interests') == null){
             localStorage.setItem('age', 70);
             localStorage.setItem('interests', JSON.stringify(this.interests));
+            location.reload();
           }
         },
         methods: {
