@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vue.js"></script>
+  <script src="js/axios.js"></script>
+  <title>Newston</title>
+</head>
+<body>
+  <div id="app">
+    <div class="konnekt-badge" v-if='!konnektShown' @click='konnektShown = true, selectionShow = true, AgeInputShow = false'>
+      <img src="images/service_icon.png" alt="">
+    </div>
+    <div class="konnekt" v-if='konnektShown'>
+      <div class="prompt" v-if='!selectionShow'>
+        <h1>Вы просматриваете новостной ресурс. Желаете ли вы персонализировать контент для Вашего удобства?</h1>
+        <a href="#" class="btn" @click='selectionShow = true'>Да</a><a href="#" class="btn" @click='konnektShown = false'>Нет, спасибо</a>
+      </div>
+      <div class="selection" v-if='selectionShow && !AgeInputShow'>
+        <h2 class='header'>Выберите свои предпочтения<img class='close' src="images/close.png" alt=""@click='konnektShown = false'></h2>
+        <div class="interests">
+          <div class="icon" v-for="interest in interests" @click='interest.isSelected = !interest.isSelected'>
+            <img :src="'images/' + interest.icon" alt="" class="icon-img">
+            <div class="title" :class='{selected: interest.isSelected}'>{{interest.title}}</div>
+          </div>
+        </div>
+        <div class="footer">
+          <img src="images/service_logo.png" alt="">
+          <a href="#" class="btn" @click='AgeInputShow = true'>Далее</a>
+        </div>
+      </div>
+      <div class="age" v-if='AgeInputShow'>
+        <input type="number" name=""placeholder="Введите Ваш возраст" v-model='age'>
+        <a href="#" class="btn" @click='save()'>Готово</a>
+      </div>
+    </div>
+    <header class="header">
+      <img src="images/logo.png" alt="" class="logo">
+      <div class="menu">
+        <a href="#" class="link">Главная</a>
+        <a href="#" class="link">Популярное</a>
+      </div>
+    </header>
+    <div class="content">
+      <div class="page news"v-if='page == "News"'>
+        <div class="news-block">
+          <div class="news-card">
+            <div class="news-card-image"><img src="images\test.jpg" alt="" class="image"></div>
+            <h2 class="news-card-title">Заголовок новости</h2>
+          </div>
+          <div class="news-card">
+            <div class="news-card-image"><img src="images\test.jpg" alt="" class="image"></div>
+            <h2 class="news-card-title">Заголовок новости</h2>
+          </div>
+          <div class="news-card">
+            <div class="news-card-image"><img src="images\test.jpg" alt="" class="image"></div>
+            <h2 class="news-card-title">Заголовок новости</h2>
+          </div>
+          <div class="news-card">
+            <div class="news-card-image"><img src="images\test.jpg" alt="" class="image"></div>
+            <h2 class="news-card-title" @click='postId = 1, page = "post"'>Заголовок новости</h2>
+          </div>
+        </div>
+        <div class="news-latest">
+          <h2>Недавние новости:</h2>
+          <div class="links">
+            <a href="#" class="link">Новость раз</a>
+            <a href="#" class="link">Новость два</a>
+            <a href="#" class="link">Новость три</a>
+            <a href="#" class="link">Новость четыре</a>
+            <a href="#" class="link">Новость пять</a>
+          </div>
+        </div>
+      </div>
+      <div class="page post">
+        <img :src="'images/' +chooseImage(posts[0])" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

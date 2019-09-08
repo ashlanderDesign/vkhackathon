@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="122.24971"
+     inkscape:cy="565.56652"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3812">
+      <text
+         id="text3715"
+         y="146.52725"
+         x="19.109774"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan3717"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';stroke-width:0.26458332"
+           y="146.52725"
+           x="19.109774"
+           sodipodi:role="line">NEW</tspan></text>
+      <text
+         id="text3721"
+         y="142.87376"
+         x="40.982597"
+         style="font-style:normal;font-weight:normal;font-size:4.60675812px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.11516894"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';stroke-width:0.11516894"
+           y="142.87376"
+           x="40.982597"
+           id="tspan3719"
+           sodipodi:role="line">S</tspan></text>
+      <text
+         id="text3725"
+         y="154.0108"
+         x="19.711123"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';stroke-width:0.26458332"
+           y="154.0108"
+           x="19.711123"
+           id="tspan3723"
+           sodipodi:role="line">TON</tspan></text>
+      <g
+         transform="translate(-51.850288,-0.13363476)"
+         id="g3796">
+        <rect
+           id="rect3727"
+           width="16.437077"
+           height="16.437077"
+           x="54.255714"
+           y="138.91008"
+           style="fill:#000080;stroke-width:0.26458332" />
+        <rect
+           style="fill:#0000ff;stroke-width:0.26458332"
+           id="rect3729"
+           width="5.7462945"
+           height="5.7462945"
+           x="54.255714"
+           y="149.60086" />
+        <rect
+           style="fill:#0000ff;stroke-width:0.26458332"
+           id="rect3729-8"
+           width="5.7462945"
+           height="5.7462945"
+           x="54.255714"
+           y="143.85457" />
+        <rect
+           style="fill:#0000ff;stroke-width:0.26458332"
+           id="rect3729-8-2"
+           width="5.7462945"
+           height="5.7462945"
+           x="60.00201"
+           y="149.60086" />
+        <rect
+           style="fill:#0000ff;stroke-width:0.26458332"
+           id="rect3729-6"
+           width="5.7462945"
+           height="5.7462945"
+           x="64.946503"
+           y="138.91008" />
+      </g>
+    </g>
+  </g>
+</svg>

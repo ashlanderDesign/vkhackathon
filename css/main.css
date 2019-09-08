@@ -1,0 +1,333 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#app{
+  width: 100%;
+  height: 80vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto",sans-serif;
+}
+
+#app > .header{
+  width: 100%;
+  height: 13vh;
+  padding: 2vh 4vw;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page{
+  width: 100%;
+  height: 100%;
+}
+
+.page.news{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+#app .content{
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2vh 2vw;
+}
+
+.header .menu{
+  width: 15vw;
+  height: 13vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.link{
+  text-decoration: none;
+  color: #000;
+}
+
+.link.active,.link:hover{
+  color: #1111ff;
+}
+
+.news-block{
+  width: 60vw;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.news-card{
+  width: 29.5vw;
+  height: 29.5vw;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 2vh;
+}
+
+.news-card .news-card-title{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+
+.news-card .news-card-image{
+  width: 100%;
+  height: 80%;
+  background-color: #cecece;
+  border-radius: 3px 3px 0 0;
+}
+
+.news-latest{
+  width: 20vw;
+  height: 30vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 1px solid #dddddd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2vh 1vw;
+  border-radius: 3px;
+}
+
+.news-latest h2{
+  width: 100%;
+}
+
+.news-latest .links{
+  width: 100%;
+  height: 80%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.links .link{
+  width: 100%;
+  text-align: left;
+}
+
+.konnekt{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999999;
+}
+
+.konnekt .prompt{
+  width: 70%;
+  height: 30%;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 4vh 2vw;
+  border-radius: 3px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.konnekt .prompt h2{
+  width: 100%;
+}
+
+.btn{
+  padding: 2vh 1vw;
+  background-color: #6666ff;
+  margin: 2vh 1vw;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  min-width: 8vw;
+  font-size: 1.3rem;
+}
+
+.konnekt .selection{
+  width: 90%;
+  height: 90%;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2vh 1vw;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.konnekt .selection .header{
+  width: 100%;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh 2vw;
+}
+
+.konnekt .selection .footer{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 2vw;
+}
+
+.konnekt .selection .footer img{
+  height: 5vh;
+}
+
+.konnekt .selection .header .close{
+  height: 3vh;
+  transform: rotate(45deg);
+}
+
+.konnekt .selection .interests{
+  width: 100%;
+  height: 80%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 2vh 4vw;
+}
+
+.konnekt .selection .interests .icon{
+  width: 10vw;
+  height: 20vh;
+  text-align: center;
+  margin-left: 2vw;
+}
+
+.konnekt .selection .interests .icon .title{
+  width: 100%;
+}
+
+.konnekt .selection .interests .icon .title.selected{
+  color: #6666ff;
+}
+
+.konnekt .selection .interests .icon .icon-img{
+  width: 100%;
+}
+
+.konnekt .age{
+  width: 40%;
+  height: 20%;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.konnekt .age input{
+  padding: 2vh 2vw;
+  font-size: 1.3rem;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+.konnekt-badge{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.konnekt-badge img{
+  width: 60%;
+}
+
+.konnekt-badge:hover{
+  background-color: #0000ff;
+}
+
+.konnekt-badge:hover img{
+  filter: brightness(0) invert(1);
+}
