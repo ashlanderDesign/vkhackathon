@@ -95,20 +95,12 @@ const app = new Vue({
           age: "",
           postId: null
         },
-        /*mounted() {
-          axios({
-              method: "get",
-              url: 'http://localhost/server_konnekt/api.php',
-              data: {req: 'loadPosts'},
-              responseType: 'text/html'
-            })
-            .then((response)=>{
-              console.log(response)
-            })
-            .catch((error)=>{
-              console.log(error)
-            })
-        },*/
+        mounted() {
+          if(!localStorage.getItem('age') && !localStorage.getItem('interests')){
+            localStorage.setItem('age', 70);
+            localStorage.setItem('interests', json.stringify(this.interests));
+          }
+        },
         methods: {
           save: function() {
             this.interests.forEach((inter) => {
