@@ -13,11 +13,23 @@
     <header>
       <h2 class="logo">DASHBOARD</h2>
     </header>
-      <div class="page home">
+      <div class="page home" v-if='page == "home"'>
         <div class="section-card">
-          <a href='#' class="section-card-title link">
+          <a href='#' class="section-card-title link" @click='page = "news-form"'>
             Новости
           </a>
+        </div>
+      </div>
+      <div class="page news-form" v-if='page == "news-form"'>
+        <div class="form">
+          <h1>Написать новость</h1>
+          <input type="text" v-model='post.title' class="input-text" placeholder='Заголовок новости'>
+          <textarea class="input-largetext" v-model='post.content' placeholder='Текст новости'></textarea>
+          <label for="file">Изображения</label><input type="file" name='file' class='input-file' placeholder="Изображения">
+        </div>
+        <div class="preview">
+          <h1>{{post.title}}</h1>
+          <span>{{post.content}}</span>
         </div>
       </div>
     <footer>

@@ -1,6 +1,10 @@
 const app = new Vue({
   el: "#dashboard",
   data: {
-    page: 'home'
+    page: 'home',
+    post: {
+      title: "",
+      content: ""
+    }
   }
 });

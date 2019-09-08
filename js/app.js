@@ -96,9 +96,9 @@ const app = new Vue({
           postId: null
         },
         mounted() {
-          if(!localStorage.getItem('age') && !localStorage.getItem('interests')){
+          if(localStorage.getItem('age') == null || localStorage.getItem('interests') == null){
             localStorage.setItem('age', 70);
-            localStorage.setItem('interests', json.stringify(this.interests));
+            localStorage.setItem('interests', JSON.stringify(this.interests));
           }
         },
         methods: {

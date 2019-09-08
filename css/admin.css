@@ -60,3 +60,58 @@ a.link:hover{
 .section-card-title{
   font-size: 1.5rem;
 }
+.news-form{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.news-form .form{
+  width: 30vw;
+  height: 70vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2vh 2vw;
+  border-right: 1px solid #dddddd;
+}
+
+.form input, textarea{
+  width: 100%;
+  padding: 2vh 1vw;
+  margin-bottom: 2vh;
+  resize: none;
+}
+
+.form textarea{
+  height: 50%;
+}
+
+.news-form .preview{
+  height: 70vh;
+  width: 60vw;
+  min-width: 60vw;
+}
+
+.preview span{
+  width: 50vw;
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+
+.preview h1{
+  width: 50vw;
+  word-wrap: break-word;
+}
